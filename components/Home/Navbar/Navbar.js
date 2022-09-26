@@ -22,7 +22,7 @@ const Navbar = () => {
                 setCategory(data.category)
             }
             catch (err) {
-                console.log(err.message)
+                console.log(err)
             }
         }
         fetchCategory()
