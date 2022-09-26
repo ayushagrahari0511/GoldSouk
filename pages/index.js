@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Contact from '../components/Home/Contact/Contact'
+import Landing from '../components/Home/Landing/Landing'
 
 export default function Home() {
   return (
@@ -12,11 +14,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Contact />
+        <Landing />
       </main>
-
       <footer className={styles.footer}>
       </footer>
     </div>

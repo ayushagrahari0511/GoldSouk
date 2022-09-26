@@ -24,3 +24,38 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+.button_primary {
+  background: #4A79BC !important;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #fff;
+  justify-content: center;
+  padding: 1rem;
+}

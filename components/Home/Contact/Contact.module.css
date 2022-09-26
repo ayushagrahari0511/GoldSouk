@@ -1,0 +1,65 @@
+.wrapper {
+    height: 5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    color: #FADBFF;
+    background: var(--violet_dark);
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper aside {
+    width: 50%;
+}
+
+/* Contact left Section ----------------Starts--------
+-------------------------------------------- */
+
+.contact {
+    display: flex;
+    grid-gap: 2rem;
+}
+
+.contact > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.contact > div > h6 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.phone, 
+.mail {
+    font-size: 2rem;
+}
+
+/* Contact left Section ----------------Ends--------
+-------------------------------------------- */
+
+/* Contact Right Section ----------------Starts--------
+-------------------------------------------- */
+
+.right_div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+}
