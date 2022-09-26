@@ -18,7 +18,7 @@ const Navbar = () => {
         const controller = new AbortController();
         async function fetchCategory() {
             try {
-                const { data } = await axios.get(`http://backend.bizinnovisiondev.co:5000/api/category`, { signal: controller.signal })
+                const { data } = await axios.get(`http://backend.bizinnovisiondev.co:5000/api/category`)
                 setCategory(data.category)
             }
             catch (err) {
