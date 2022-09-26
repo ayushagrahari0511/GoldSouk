@@ -1,14 +1,16 @@
 import styles from './Landing.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '../Navbar/Navbar'
 
 const Landing = () => {
     return (
         <main className={styles.wrapper}>
+            <Navbar />
             <div className={styles.container}>
                 <aside className={styles.left_side}>
                     <div className={styles.img}>
-                        <Image src="/istockphoto.webp" layout='fill' priority/>
+                        <Image src="/istockphoto.webp" layout='fill' priority />
                     </div>
                 </aside>
                 <aside className={styles.right_side}>

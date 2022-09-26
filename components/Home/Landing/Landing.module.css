@@ -3,6 +3,7 @@
     width: 100%;
     background: linear-gradient(180deg, #FFFCF3 0%, #FFFEF9 100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
