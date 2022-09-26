@@ -50,7 +50,7 @@ const Navbar = () => {
                             <div className={styles.drop_down_active}>
                                 {
                                     category && category.map((cat) => (
-                                        <li>
+                                        <li key={cat._id}>
                                             <Link href={`http://bizinnovisiondev.co:88/category/${cat.title}`}>
                                                 {cat.title}
                                             </Link>
