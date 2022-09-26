@@ -48,7 +48,7 @@ const Navbar = () => {
                                 <Image src="/arrow.svg" layout="fill" />
                             </span>
                             <div className={styles.drop_down_active}>
-                                {
+                                {/* {
                                     category && category.map((cat) => (
                                         <li key={cat._id}>
                                             <Link href={`http://bizinnovisiondev.co:88/category/${cat.title}`}>
@@ -56,7 +56,38 @@ const Navbar = () => {
                                             </Link>
                                         </li>
                                     ))
-                                }
+                                } */}
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Earrings`}>
+                                        Earrings
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Necklace`}>
+                                        Necklace
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Rings`}>
+                                        Rings
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Bracelet`}>
+                                        Bracelet
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Bangles`}>
+                                        Bangles
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href={`http://bizinnovisiondev.co:88/category/Pendant`}>
+                                        Pendant
+                                    </Link>
+                                </li>
+
                             </div>
                         </li>
                         <li>
