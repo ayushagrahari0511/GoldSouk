@@ -1,4 +1,6 @@
 import styles from './Collection.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const collection = [
     {
@@ -61,6 +63,30 @@ const Collection = () => {
             <div className={styles.container}>
                 <li>
                     SOLITAIRES
+                    <div className={styles.dropdown}>
+                        <div className={styles.category}>
+                            <h3>SOLITAIRE RINGS</h3>
+                            <div className={styles.cat_img}>
+                                <Image src="/solitaire_ring.webp" layout="fill" />
+                            </div>
+                        </div>
+                        <div className={styles.vertical}></div>
+                        <Link href={`http://bizinnovisiondev.co:88/category/Earrings`}>
+                            <div className={styles.category}>
+                                <h3>SOLITAIRE EARRINGS</h3>
+                                <div className={styles.cat_img}>
+                                    <Image src="/solitaire_earring.webp" layout="fill" />
+                                </div>
+                            </div>
+                        </Link>
+                        <div className={styles.vertical}></div>
+                        <div className={styles.category}>
+                            <h3>SOLITAIRE PENDANT</h3>
+                            <div className={styles.cat_img}>
+                                <Image src="/solitaire_pendant.webp" layout="fill" />
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     DIAMOND
