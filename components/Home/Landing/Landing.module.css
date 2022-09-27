@@ -11,6 +11,7 @@
 
 .container {
     width: 95%;
+    padding-top: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;

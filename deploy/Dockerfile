@@ -14,7 +14,7 @@ RUN apt update -y \
 # RUN rm /etc/nginx/conf.d/*
 
 #Copy config files
-COPY ./default.conf /etc/nginx/conf.d/
+COPY ./default.conf /etc/nginx/sites-enabled/default
 
 #Expose the listenign port
 EXPOSE 80

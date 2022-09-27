@@ -1,0 +1,94 @@
+import styles from './Collection.module.css'
+
+const collection = [
+    {
+        _id: 1,
+        title: "SOLITAIRES",
+        subCategory: [
+            {
+                _id: 1,
+                title: "RINGS",
+                img: "/solitaire_ring.webp"
+            },
+            {
+                _id: 2,
+                title: "EARRINGS",
+                img: "/solitaire_earring.webp"
+            },
+            {
+                _id: 3,
+                title: "PENDANTS",
+                img: "/solitaire_pendant.webp"
+            }
+        ]
+    },
+    {
+        _id: 2,
+        title: "DIAMOND"
+    },
+    {
+        _id: 3,
+        title: "GOLD"
+    },
+    {
+        _id: 4,
+        title: "PLATINUM"
+    },
+    {
+        _id: 5,
+        title: "GOLD COINS"
+    },
+    {
+        _id: 6,
+        title: "WATCHES"
+    },
+    {
+        _id: 7,
+        title: "GIFTS"
+    },
+    {
+        _id: 8,
+        title: "GIFTS CARDS"
+    },
+    {
+        _id: 9,
+        title: "GOLD RATE"
+    },
+]
+const Collection = () => {
+    return (
+        <div className={styles.wrapper}>
+            <div className={styles.container}>
+                <li>
+                    SOLITAIRES
+                </li>
+                <li>
+                    DIAMOND
+                </li>
+                <li>
+                    GOLD
+                </li>
+                <li>
+                    PLATINUM
+                </li>
+                <li>
+                    GOLD COINS
+                </li>
+                <li>
+                    WATCHES
+                </li>
+                <li>
+                    GIFTS
+                </li>
+                <li>
+                    GIFT CARDS
+                </li>
+                <li>
+                    GOLD RATE
+                </li>
+            </div>
+        </div>
+    )
+}
+
+export default Collection

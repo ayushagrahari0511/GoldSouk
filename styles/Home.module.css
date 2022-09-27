@@ -1,0 +1,9 @@
+.container {
+    background: linear-gradient(180deg, #FFFCF3 0%, #FFFEF9 100%);
+}
+
+.background_ring {
+    position: relative;
+    width: 100%;
+    height: 80rem;
+}

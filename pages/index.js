@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Contact from '../components/Home/Contact/Contact'
 import Landing from '../components/Home/Landing/Landing'
+import Footer from '../components/Home/Footer/Footer'
 
 export default function Home() {
   return (
@@ -16,9 +17,11 @@ export default function Home() {
       <main className={styles.main}>
         <Contact />
         <Landing />
+        <div className={styles.background_ring}>
+          <Image src="/diamond_ring.png" layout='fill' />
+        </div>
       </main>
-      <footer className={styles.footer}>
-      </footer>
+      <Footer />
     </div>
   )
 }
