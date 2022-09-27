@@ -51,7 +51,9 @@
 }
 
 .dropdown.row {
+    grid-gap: 4rem;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 2rem;
 }
 
@@ -104,4 +106,36 @@
     background: #F4F1E6;
     color: var(--violet_dark);
     font-weight: 600;
+}
+
+.shop_style {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+}
+
+.shop_style > h5 {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.list {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-gap: .5rem;
+    height: 30rem;
+}
+
+.list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
