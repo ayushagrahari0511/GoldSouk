@@ -90,6 +90,58 @@ const Collection = () => {
                 </li>
                 <li>
                     DIAMOND
+                    <div className={`${styles.dropdown} ${styles.row}`}>
+                        <div className={styles.sub_category}>
+                            <li>
+                                <Link href="#">
+                                    Ring
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Earring
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Pendant
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Nosepin
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Necklace
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Bangle
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Bracelet
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    MangalSutra
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Collection
+                                </Link>
+                            </li>
+                        </div>
+                        <div className={styles.shop_style}>
+        
+                        </div>
+                    </div>
                 </li>
                 <li>
                     GOLD

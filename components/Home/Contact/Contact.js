@@ -9,11 +9,11 @@ const Contact = () => {
                 <aside className={styles.contact}>
                     <div>
                         <Phone className={styles.phone} />
-                        <h6>123-456-7890</h6>
+                        <h6>+971 - 50 -0000000</h6>
                     </div>
                     <div>
                         <Mail className={styles.mail} />
-                        <h6>lovemore@wecare.com</h6>
+                        <h6>info@goldsouk.com</h6>
                     </div>
                 </aside>
                 <aside className={styles.right_div}>
