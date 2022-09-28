@@ -73,6 +73,10 @@
     font-weight: 300;
 }
 
+.button:hover {
+    background: var(--violet_dark) !important;
+    transition: all 0.3s ease;
+}
 .rangoli {
     position: absolute;
     right: -25%;

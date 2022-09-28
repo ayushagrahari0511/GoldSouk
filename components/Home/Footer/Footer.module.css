@@ -19,9 +19,10 @@
 }
 
 .container > h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     margin-top: 4rem;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: 'Signatie', sans-serif;
 }
 
 .container > h3 {
@@ -89,4 +90,16 @@
 .social_icons {
     font-size: 3rem;
     /* color: ; */
+}
+
+.links {
+    display: flex;
+    grid-gap: 3.5rem;
+}
+
+.links > li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    color: #370F3D;
+    font-weight: 600;
 }

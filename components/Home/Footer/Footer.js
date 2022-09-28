@@ -38,7 +38,7 @@ const Footer = () => {
                         </Link>
                     </li>
                 </div>
-                {/* <div className={styles.links}>
+                <div className={styles.links}>
                     <li>
                         <Link href="#">Get To Know Us</Link>
                     </li>
@@ -57,7 +57,7 @@ const Footer = () => {
                     <li>
                         <Link href="#">T & C</Link>
                     </li>
-                </div> */}
+                </div>
                 <h6>Copyright text ll appear here at 2022</h6>
             </footer>
         </div>
