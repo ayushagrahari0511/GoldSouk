@@ -1,0 +1,53 @@
+.wrapper {
+    width: 100%;
+    background: url('../../public/heart.png');
+    background-repeat: no-repeat;
+    background-size: 180% 240%;
+    background-position: top 62% left 55%;
+    display: flex;
+    position: relative;
+    grid-gap: 10rem;
+    padding-top: 15rem;
+}
+
+.img_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78rem;
+    height: 63rem;
+    background: linear-gradient(180deg, #EDC7CE 0%, #B7A5CD 100%);
+}
+
+
+.img {
+    position: relative;
+    width: 75rem;
+    height: 60rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    position: absolute;
+    width: 50rem;
+    padding: 5rem;
+    left: 40%;
+    background: linear-gradient(180deg, #FFE6EA 0%, #F4E5EC 100%);
+    border: 2px solid #FFFFFF;
+}
+
+.desc > h5 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--violet_dark);   
+}
+
+.wrapper > h1 {
+    position: relative;
+    top: -8rem;
+    font-family: 'Signatie', sans-serif;
+    color: rgb(116 33 75 / 26%);
+    font-size: 8rem;
+}

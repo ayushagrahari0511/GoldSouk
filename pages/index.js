@@ -5,6 +5,7 @@ import Contact from '../components/Home/Contact/Contact'
 import Landing from '../components/Home/Landing/Landing'
 import Footer from '../components/Home/Footer/Footer'
 import Trending from '../components/Home/Trending/Trending'
+import Watch from '../components/Watch/Watch'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <div className={styles.background_ring}>
           <Image src="/diamond_ring.png" layout='fill' />
         </div>
+        <Watch />
       </main>
       <Footer />
     </div>
