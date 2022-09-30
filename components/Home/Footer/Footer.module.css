@@ -18,25 +18,27 @@
     grid-gap: 5rem;
 }
 
-.container > h1 {
+.container>h1 {
     font-size: 7rem;
     margin-top: 4rem;
     font-weight: 500;
     font-family: 'Signatie', sans-serif;
 }
 
-.container > h3 {
+.container>h3 {
     font-size: 2.4rem;
+    text-align: center;
     font-weight: 400;
 }
 
-.container > h5 {
+.container>h5 {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.container > h6 {
+.container>h6 {
     font-size: 1.4rem;
+    text-align: center;
     font-weight: 400;
     letter-spacing: 4px;
     margin-bottom: 4rem;
@@ -48,10 +50,10 @@
     justify-content: center;
 }
 
-.form > input {
+.form>input {
     border: 1px solid var(--violet_dark);
     height: 4rem;
-    width:45rem;
+    width: 45rem;
     border-top-left-radius: .3rem;
     border-bottom-left-radius: .3rem;
     outline: none;
@@ -60,17 +62,22 @@
     background: transparent;
 }
 
-.form > button {
+.form>button {
     background: var(--violet_dark);
     cursor: pointer;
     border: none;
     height: 4rem;
-    padding: .5rem;
+    padding: .5rem 2rem;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 2px;
     color: #fff;
+}
+
+.form>button:hover {
+    color: var(--orange);
+    transition: all 0.3s ease;
 }
 
 .social_links {
@@ -80,11 +87,17 @@
     grid-gap: 10rem;
 }
 
-.social_links > li {
+.social_links>li {
+    cursor: pointer;
     list-style-type: none;
     position: relative;
     width: 3rem;
     height: 3rem;
+    opacity: 0.7;
+}
+
+.social_links>li:hover {
+    opacity: 1;
 }
 
 .social_icons {
@@ -97,9 +110,94 @@
     grid-gap: 3.5rem;
 }
 
-.links > li {
+.links>li {
     list-style-type: none;
     font-size: 1.6rem;
     color: #370F3D;
     font-weight: 600;
+}
+
+.links>li:hover {
+    color: #ffc107;
+    transition: all 0.3s ease;
+}
+
+/* for Medium devices such as tablets --------------
+---------------------*/
+@media (max-width: 991.98px) {
+    .container {
+        background: url('../../../public/star.png'), url('../../../public/flower.png'), url('../../../public/mandala.png');
+        background-repeat: no-repeat;
+        background-position: top 0 left -8rem, bottom 0 left -8rem, right -40% bottom 0;
+        background-size: 25rem 25rem, 20rem 20rem, 35rem 35rem;
+    }  
+}
+
+/* Small devices (landscape phone, )------------------
+--------------------------- */
+
+@media (max-width: 767.98px) {    
+    .container {
+        grid-gap: 2.5rem;
+        background-position: top 0 left -8rem, bottom 0 left -8rem, right -80% bottom 0;
+        background-size: 25rem 25rem, 20rem 20rem, 35rem 35rem;
+    }  
+
+    .container>h1 {
+        font-size: 6rem;
+    }
+
+    .form>input {
+        width: 35rem;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 1.5rem;
+    }
+}
+
+/* Small devices such as phone -------------------
+-----------------------------------*/
+
+@media (max-width: 575.98px) {
+    .container {
+        grid-gap: 1.5rem;
+        background-position: top 0 left -8rem, bottom 15% left -4rem, right -100% bottom 0;
+        background-size: 18rem 18rem, 15rem 15rem, 22rem 22rem;
+    }  
+
+    .container > h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container > h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .container > h5 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .social_links {
+        grid-gap: 4rem;
+    }
+
+    .form>input {
+        width: 17rem;
+    }
+
+    .social_icons {
+        font-size: 2.5rem;
+        /* color: ; */
+    }    
+
+    .form > button {
+        padding: 0.5rem 1.5rem;
+    }
 }

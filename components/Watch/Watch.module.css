@@ -19,7 +19,6 @@
     background: linear-gradient(180deg, #EDC7CE 0%, #B7A5CD 100%);
 }
 
-
 .img {
     position: relative;
     width: 75rem;
@@ -38,16 +37,157 @@
     border: 2px solid #FFFFFF;
 }
 
-.desc > h5 {
+.desc>h5 {
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--violet_dark);   
+    color: var(--violet_dark);
 }
 
-.wrapper > h1 {
+.wrapper>h1 {
     position: relative;
     top: -8rem;
     font-family: 'Signatie', sans-serif;
     color: rgb(116 33 75 / 26%);
     font-size: 8rem;
+}
+
+@media (max-width: 1199.98px) {
+    .wrapper {
+        background-size: 174% 194%;
+        background-position: top 62% left 55%;
+        grid-gap: 5rem;
+        padding-top: 14rem;
+    }
+
+    .img_background {
+        width: 70rem;
+        height: 57rem;
+    }
+
+    .img {
+        width: 67rem;
+        height: 54rem;
+    }
+
+    .desc {
+        width: 48rem;
+    }
+
+    .wrapper>h1 {
+        top: -8rem;
+        font-size: 6rem;
+    }
+}
+
+/* for Medium devices such as tablets --------------
+---------------------*/
+@media (max-width: 991.98px) {
+    .wrapper {
+        background-size: 174% 194%;
+        background-position: top 62% left 55%;
+        grid-gap: 2rem;
+        padding-top: 14rem;
+    }
+
+    .img_background {
+        width: 54rem;
+        height: 46rem;
+    }
+
+    .img {
+        width: 51rem;
+        height: 44rem;
+    }
+
+    .desc {
+        width: 40rem;
+        padding: 3rem;
+        bottom: -6%;
+    }
+
+    .wrapper>h1 {
+        top: -8rem;
+        font-size: 6rem;
+    }
+}
+
+/* Small devices (landscape phone, )------------------
+--------------------------- */
+
+@media (max-width: 767.98px) {
+    .wrapper {
+        background-size: 174% 194%;
+        background-position: top 62% left 55%;
+        grid-gap: 0rem;
+        padding-top: 14rem;
+    }
+
+    .img_background {
+        position: relative;
+        top: -5rem;
+        left: -3rem;
+        width: 42rem;
+        height: 37rem;
+    }
+
+    .img {
+        width: 40rem;
+        height: 35rem;
+    }
+
+    .desc {
+        width: 32rem;
+        padding: 2rem;
+        bottom: -6%;
+    }
+    
+    .desc > h5 {
+        font-size: 1.2rem;
+    }
+    .wrapper>h1 {
+        top: -8rem;
+        left: -2rem;
+        font-size: 5rem;
+    }
+}
+
+/* Small devices such as phone -------------------
+-----------------------------------*/
+
+@media (max-width: 575.98px) {
+    .wrapper {
+        background-size: 174% 194%;
+        background-position: top 62% left 55%;
+        flex-direction: column-reverse;
+        grid-gap: 0rem;
+        padding-top: 14rem;
+    }
+
+    .img_background {
+        position: relative;
+        top: -5rem;
+        left: -3rem;
+        width: 42rem;
+        height: 37rem;
+    }
+
+    .img {
+        width: 40rem;
+        height: 35rem;
+    }
+
+    .desc {
+        width: 32rem;
+        padding: 2rem;
+        bottom: -6%;
+    }
+    
+    .desc > h5 {
+        font-size: 1.2rem;
+    }
+    .wrapper>h1 {
+        top: -8rem;
+        left: -2rem;
+        font-size: 5rem;
+    }
 }

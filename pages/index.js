@@ -6,6 +6,7 @@ import Landing from '../components/Home/Landing/Landing'
 import Footer from '../components/Home/Footer/Footer'
 import Trending from '../components/Home/Trending/Trending'
 import Watch from '../components/Watch/Watch'
+import Categories from '../components/Home/Categories/Categories'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Contact />
         <Landing />
         <Trending />
+        <Categories />
         <div className={styles.background_ring}>
           <Image src="/diamond_ring.png" layout='fill' />
         </div>

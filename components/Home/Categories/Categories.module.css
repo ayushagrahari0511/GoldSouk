@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    grid-gap: 4rem;
+    background: url('../../../public/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: 110% 90%;
+    background-position: bottom 0 right -220%;
+}
+
+.wrapper > h2 {
+    font-family: 'Signatie', sans-serif;
+    font-size: 7rem;
+    color: rgb(116 33 75 / 26%);
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.cat_name {
+    position: relative;
+    top: -10rem;
+}
+
+.cat_name > h3 {
+    font-size: 6rem;
+    color: var(--violet_dark);
+    font-weight: 400;
+}
+
+.link {
+    font-size: 1.6rem;
+    color: #6C1D45;
+}
+.img {
+    position: relative;
+    width: 80rem;
+    height: 65rem;
+}
