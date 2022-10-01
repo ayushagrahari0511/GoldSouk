@@ -284,43 +284,43 @@ const Collection = () => {
                             <h5>Shop By Style</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/gold/band.jpg" width={40} height={30} />
+                                    <Image src="/gold_gold_band.jpg" width={40} height={30} />
                                     Bands
                                 </li>
                                 <li>
-                                    <Image src="/gold/stacable.jpg" width={40} height={30} />
+                                    <Image src="/gold_stacable.jpg" width={40} height={30} />
                                     Stackable
                                 </li>
                                 <li>
-                                    <Image src="/gold/cocktail.jpg" width={40} height={30} />
+                                    <Image src="/gold_cocktail.jpg" width={40} height={30} />
                                     Cocktail
                                 </li>
                                 <li>
-                                    <Image src="/gold/broad.jpg" width={40} height={30} />
+                                    <Image src="/gold_gold_broad.jpg" width={40} height={30} />
                                     Broad Rings
                                 </li>
                                 <li>
-                                    <Image src="/gold/for-men.jpg" width={40} height={30} />
+                                    <Image src="/gold_for-men.jpg" width={40} height={30} />
                                     For men
                                 </li>
                                 <li>
-                                    <Image src="/gold/casual.jpg" width={40} height={30} />
+                                    <Image src="/gold_casual.jpg" width={40} height={30} />
                                     Casual
                                 </li>
                                 <li>
-                                    <Image src="/gold/solitaire.jpg" width={40} height={30} />
+                                    <Image src="/gold_solitaire.jpg" width={40} height={30} />
                                     Single Stone
                                 </li>
                                 <li>
-                                    <Image src="/gold/cocktail.jpg" width={40} height={30} />
+                                    <Image src="/gold_cocktail.jpg" width={40} height={30} />
                                     Two Headed
                                 </li>
                                 <li>
-                                    <Image src="/gold/eternity.jpg" width={40} height={30} />
+                                    <Image src="/gold_eternity.jpg" width={40} height={30} />
                                     Eternity
                                 </li>
                                 <li>
-                                    <Image src="/gold/for-kids.jpg" width={40} height={30} />
+                                    <Image src="/gold_for-kids.jpg" width={40} height={30} />
                                     For Kids
                                 </li>
                             </div>
@@ -329,19 +329,19 @@ const Collection = () => {
                             <h5>Wearing Type</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/gold/daily-wear.jpg" width={40} height={30} />
+                                    <Image src="/gold_daily-wear.jpg" width={40} height={30} />
                                     Daily Wear
                                 </li>
                                 <li>
-                                    <Image src="/gold/office-wear.jpg" width={40} height={30} />
+                                    <Image src="/gold_office-wear.jpg" width={40} height={30} />
                                     Office Wear
                                 </li>
                                 <li>
-                                    <Image src="/gold/casual-wear.jpg" width={40} height={30} />
+                                    <Image src="/gold_casual-wear.jpg" width={40} height={30} />
                                     Casual Wear
                                 </li>
                                 <li>
-                                    <Image src="/gold/party-wear.jpg" width={40} height={30} />
+                                    <Image src="/gold_party-wear.jpg" width={40} height={30} />
                                     Party Wear
                                 </li>
                             </div>
@@ -350,19 +350,19 @@ const Collection = () => {
                             <h5>Shop By Metal</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/gold/yellow-gold.jpg" width={40} height={30} />
+                                    <Image src="/gold_yellow-gold.jpg" width={40} height={30} />
                                     Yellow Gold
                                 </li>
                                 <li>
-                                    <Image src="/gold/rose-gold.png" width={40} height={30} />
+                                    <Image src="/gold_rose-gold.png" width={40} height={30} />
                                     Rose Gold
                                 </li>
                                 <li>
-                                    <Image src="/gold/two-tone.jpg" width={40} height={30} />
+                                    <Image src="/gold_two-tone.jpg" width={40} height={30} />
                                     Two Tone
                                 </li>
                                 <li>
-                                    <Image src="/gold/two-tone2.jpg" width={40} height={30} />
+                                    <Image src="/gold_two-tone2.jpg" width={40} height={30} />
                                     Three Tone
                                 </li>
                             </div>
@@ -423,27 +423,27 @@ const Collection = () => {
                             <h5>Shop By Style</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/platinum/band.jpg" width={40} height={30} />
+                                    <Image src="/platinum_band.jpg" width={40} height={30} />
                                     Bands
                                 </li>
                                 <li>
-                                    <Image src="/platinum/casual.jpg" width={40} height={30} />
+                                    <Image src="/platinum_casual.jpg" width={40} height={30} />
                                     Casual
                                 </li>
                                 <li>
-                                    <Image src="/platinum/solitaire.jpg" width={40} height={30} />
+                                    <Image src="/platinum_solitaire.jpg" width={40} height={30} />
                                     Solitaire
                                 </li>
                                 <li>
-                                    <Image src="/platinum/two-headed.jpg" width={40} height={30} />
+                                    <Image src="/platinum_two-headed.jpg" width={40} height={30} />
                                     Two Headed
                                 </li>
                                 <li>
-                                    <Image src="/platinum/eternity.jpg" width={40} height={30} />
+                                    <Image src="/platinum_eternity.jpg" width={40} height={30} />
                                     Eternity
                                 </li>
                                 <li>
-                                    <Image src="/platinum/for-men.jpg" width={40} height={30} />
+                                    <Image src="/platinum_for-men.jpg" width={40} height={30} />
                                     For men
                                 </li>
                             </div>
@@ -452,19 +452,19 @@ const Collection = () => {
                             <h5>Shop By Ocassion</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/platinum/daily-wear.jpg" width={40} height={30} />
+                                    <Image src="/platinum_daily-wear.jpg" width={40} height={30} />
                                     Daily Wear
                                 </li>
                                 <li>
-                                    <Image src="/platinum/office-wear.jpg" width={40} height={30} />
+                                    <Image src="/platinum_office-wear.jpg" width={40} height={30} />
                                     Office Wear
                                 </li>
                                 <li>
-                                    <Image src="/platinum/casual2.jpg" width={40} height={30} />
+                                    <Image src="/platinum_casual2.jpg" width={40} height={30} />
                                     Casual Wear
                                 </li>
                                 <li>
-                                    <Image src="/platinum/party-wear.jpg" width={40} height={30} />
+                                    <Image src="/platinum_party-wear.jpg" width={40} height={30} />
                                     Party Wear
                                 </li>
                             </div>
@@ -473,7 +473,7 @@ const Collection = () => {
                             <h5>Shop By Metal</h5>
                             <div className={styles.list}>
                                 <li>
-                                    <Image src="/platinum/platinum.jpg" width={40} height={30} />
+                                    <Image src="/platinum_platinum.jpg" width={40} height={30} />
                                     Platinum
                                 </li>
                             </div>
