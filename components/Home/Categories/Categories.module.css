@@ -1,5 +1,7 @@
 .wrapper {
+    width: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 5rem;
     grid-gap: 4rem;
@@ -39,4 +41,38 @@
     position: relative;
     width: 80rem;
     height: 65rem;
+}
+
+.bottom_carousel_left, .bottom_carousel_right {
+    background: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    color:var(--bs-dark);
+    cursor: pointer;
+    height: fit-content;
+    border-radius: 50%;
+    padding: .3rem;
+    font-size: 3rem;
+}
+
+.bottom_carousel_left:hover , .bottom_carousel_right:hover {
+    background: var(--bs-dark);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.bottom_carousel_left {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+}
+
+.bottom_carousel_right {
+    position: absolute;
+    top: 50%;
+    right: 4rem;
 }

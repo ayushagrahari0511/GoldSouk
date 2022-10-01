@@ -15,6 +15,7 @@ html {
   --grey_dark: #653727;
   --grey: #604D56;
   --orange: #FF8F67;
+  --bs-dark: #212529;
 }
 
 body {
@@ -74,6 +75,10 @@ h6 {
 .link:hover {
   color: #ffc107;
   transition: all 0.3s ease;
+}
+
+.swiper {
+  width: 100%;
 }
 
 @media (max-width: 1199.98px) {
