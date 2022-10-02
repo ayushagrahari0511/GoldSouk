@@ -84,28 +84,28 @@ export const data = [
                     {
                         img: "/diamond_earring_hoops.jpg",
                         title: "Hoops & Bali"
-                    },{
+                    }, {
                         img: "/diamond_earring_jhumki.jpg",
                         title: "Jhumki"
-                    },{
+                    }, {
                         img: "/diamond_earring_jacket.jpg",
                         title: "Jacket"
-                    },{
+                    }, {
                         img: "/diamond_earring_dangler.jpg",
                         title: "Dangle"
-                    },{
+                    }, {
                         img: "/diamond_earring_dropes.jpg",
                         title: "Drops"
-                    },{
+                    }, {
                         img: "/diamond_earring_clip-on.jpg",
                         title: "Clip-On"
-                    },{
+                    }, {
                         img: "/diamond_earring_chand-bali.jpg",
                         title: "Chandbali"
-                    },{
+                    }, {
                         img: "/diamond_earring_solitaire_2.jpg",
                         title: "Solitaire"
-                    },{
+                    }, {
                         img: "/diamond_earring_chandelier.jpg",
                         title: "Chandelier"
                     },
@@ -145,31 +145,279 @@ export const data = [
             },
             {
                 title: "Pendant",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_pendant_casual.jpg",
+                        title: "Casual"
+                    },
+                    {
+                        img: "/diamond_pendant_solitair.jpg",
+                        title: "Solitaire"
+                    },
+                    {
+                        img: "/diamond_pendant_tanmaniya.jpg",
+                        title: "Tanmaniya"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_pendant_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/diamond_pendant_office-wear.jpg",
+                        title: "Office Wear"
+                    },
+                    {
+                        img: "/diamond_pendant_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/diamond_pendant_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/white-gold.png",
+                        title: "White Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/two-tone.jpg",
+                        title: "Two Tone"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
             },
             {
                 title: "Nosepin",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_nosepin_screw.jpg",
+                        title: "Screw"
+                    },
+                    {
+                        img: "/diamond_nosepin_wire.jpg",
+                        title: "Wire"
+                    },
+                    {
+                        img: "/diamond_nosepin_nosering.jpg",
+                        title: "Nosering"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_nosepin_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/white-gold.png",
+                        title: "White Gold"
+                    },
+                ]
             },
             {
                 title: "Necklace",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_necklace_clock-to-neck.jpg",
+                        title: "Close to Neck"
+                    },
+                    {
+                        img: "/diamond_necklace_semi-long.jpg",
+                        title: "Wire"
+                    },
+                    {
+                        img: "/diamond_necklace_chocker.jpg",
+                        title: "Chocker"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_necklace_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/white-gold.png",
+                        title: "Two Tone"
+                    },
+                ]
             },
             {
                 title: "Bangles",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_bangle_kangan.jpg",
+                        title: "Kangan"
+                    },
+                    {
+                        img: "/diamond_bangle_hollow.jpg",
+                        title: "Hollow"
+                    },
+                    {
+                        img: "/diamond_bangle_oval.jpg",
+                        title: "Oval"
+                    },
+                    {
+                        img: "/diamond_bangle_cuff.jpg",
+                        title: "Cuff"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_bangle_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/diamond_bangle_office-wear.jpg",
+                        title: "Office Wear"
+                    },
+                    {
+                        img: "/diamond_bangle_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/diamond_bangle_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
             },
             {
                 title: "Bracelet",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_bracelet_loose.jpg",
+                        title: "Loose"
+                    },
+                    {
+                        img: "/diamond_bracelet_chain.jpg",
+                        title: "Chain"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_bracelet_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/diamond_bracelet_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
+
             },
             {
                 title: "MangalSutra",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_mangalsutra_semi-long.jpg",
+                        title: "Hollow"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/diamond_mangalsutra_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/diamond_mangalsutra_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Two Tone"
+                    },
+                ]
+
             },
             {
                 title: "Collection",
-               
+                shopByStyle: [
+                    {
+                        img: "/diamond_collection_allure.jpg",
+                        title: "Allure"
+                    },
+                    {
+                        img: "/diamond_collection_mesh.jpg",
+                        title: "Mesh"
+                    },
+                    {
+                        img: "/diamond_collection_allium.jpg",
+                        title: "Allium"
+                    },
+                    {
+                        img: "/diamond_collection_solitair.jpg",
+                        title: "Solitaire"
+                    },
+                    {
+                        img: "/diamond_collection_every-day.jpg",
+                        title: "Every Day"
+                    },{
+                        img: "/diamond_collection_zoul.jpg",
+                        title: "Zoul"
+                    },
+                ],
             },
         ]
     },
@@ -339,31 +587,31 @@ export const data = [
             },
             {
                 title: "Pendant",
-               
+
             },
             {
                 title: "Nosepin",
-               
+
             },
             {
                 title: "Necklace",
-               
+
             },
             {
                 title: "Bangles",
-               
+
             },
             {
                 title: "Bracelet",
-               
+
             },
             {
                 title: "MangalSutra",
-               
+
             },
             {
                 title: "Collection",
-               
+
             },
 
         ]
@@ -478,19 +726,19 @@ export const data = [
             },
             {
                 title: "Bangles",
-               
+
             },
             {
                 title: "Bracelet",
-               
+
             },
             {
                 title: "MangalSutra",
-               
+
             },
             {
                 title: "Collection",
-               
+
             },
 
         ]
