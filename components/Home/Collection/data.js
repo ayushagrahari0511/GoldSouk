@@ -363,7 +363,7 @@ export const data = [
             },
             {
                 title: "MangalSutra",
-                shopByStyle: [
+                shopByStyle : [
                     {
                         img: "/diamond_mangalsutra_semi-long.jpg",
                         title: "Hollow"
@@ -587,33 +587,406 @@ export const data = [
             },
             {
                 title: "Pendant",
-
+                shopByStyle: [
+                    {
+                        img: "/gold_pendant_casual.jpg",
+                        title: "Casual"
+                    },
+                    {
+                        img: "/gold_pendant_thali.jpg",
+                        title: "Thali"
+                    },
+                    {
+                        img: "/gold_pendant_tanmaniya.jpg",
+                        title: "Tanmaniya"
+                    },
+                    {
+                        img: "/gold_pendant_mangalsutra-pendant.jpg",
+                        title: "Mangalsutra Pendant"
+                    },{
+                        img: "/gold_pendant_formans.jpg",
+                        title: "For Men"
+                    },{
+                        img: "/gold_pendant_for-kids.jpg",
+                        title: "For Kids"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/gold_pendant_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/gold_pendant_office-wear.jpg",
+                        title: "Office Wear"
+                    },
+                    {
+                        img: "/gold_pendant_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/gold_pendant_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/white-gold.png",
+                        title: "White Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/two-tone.jpg",
+                        title: "Two Tone"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
+            },
+            {
+                title: "Chain",
+                shopByStyle: [
+                    {
+                        img: "/gold_chain_handcrafted.jpg",
+                        title: "Handcrafted"
+                    },
+                    {
+                        img: "/gold_chain_machin-made.jpg",
+                        title: "Machine Made"
+                    },
+                    {
+                        img: "/gold_chain_fancy.jpg",
+                        title: "Fancy"
+                    },
+                    {
+                        img: "/gold_chain_for-men.jpg",
+                        title: "For Men"
+                    },{
+                        img: "/gold_chain_for-kids.jpg",
+                        title: "For Kids"
+                    }
+                ],
+                wearingType: [
+                    {
+                        img: "/gold_chain_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/gold_chain_office-wear.jpg",
+                        title: "Office Wear"
+                    },
+                    {
+                        img: "/gold_chain_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/gold_chain_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/white-gold.png",
+                        title: "White Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/two-tone.jpg",
+                        title: "Two Tone"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
             },
             {
                 title: "Nosepin",
-
+                shopByStyle: [
+                    {
+                        title: "Screw"
+                    },
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    },
+                    {
+                        title: "Casual Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        title: "Yellow Gold"
+                    },
+                ]
             },
             {
                 title: "Necklace",
-
+                shopByStyle: [
+                    {
+                        title: "Long"
+                    },
+                    {
+                        title: "Close to Neck"
+                    },
+                    {
+                        title: "Semi Long"
+                    },
+                    {
+                        title: "Chocker"
+                    },
+                    {
+                        title: "For Kids"
+                    }
+                ],
+                wearingType: [
+                    {
+                        title: "Party Wear"
+                    },
+                    {
+                        title: "Office Wear"
+                    },
+                    {
+                        title: "Casual Wear"
+                    },
+                    {
+                        title: "Party Wear"
+                    }
+                ],
+                shopByMetal: [
+                    {
+                        title: "Yellow Gold"
+                    },
+                    {
+                        title: "White Gold"
+                    },
+                    {
+                        title: "Rose Gold"
+                    },
+                    {
+                        title: "Two Tone"
+                    },
+                ]
             },
             {
                 title: "Bangles",
-
+                shopByStyle: [
+                    {
+                        img: "/gold_bangle_kangan.jpg",
+                        title: "Kangan"
+                    },
+                    {
+                        img: "/gold_bangle_hollow.jpg",
+                        title: "Hollow"
+                    },
+                    {
+                        img: "/gold_bangle_light-weight.jpg",
+                        title: "Light Weight"
+                    },
+                    {
+                        img: "/gold_bangle_kada.jpg",
+                        title: "Kada"
+                    },{
+                        img: "/gold_bangle_oval.jpg",
+                        title: "Oval"
+                    },{
+                        img: "/gold_bangle_for-kids.jpg",
+                        title: "For Kids"
+                    },
+                ],
+                wearingType: [
+                    {
+                        img: "/gold_bangle_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/gold_bangle_office-wear.jpg",
+                        title: "Office Wear"
+                    },
+                    {
+                        img: "/gold_bangle_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/gold_bangle_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
             },
             {
                 title: "Bracelet",
-
+                shopByStyle: [
+                    {
+                        img: "/gold_bracelet_loose.jpg",
+                        title: "Loose"
+                    },
+                    {
+                        img: "/gold_bracelet_charms.jpg",
+                        title: "Charms"
+                    },
+                    {
+                        img: "/gold_bracelet_chain.jpg",
+                        title: "Chain"
+                    },
+                    {
+                        img: "/gold_bracelet_for-men.jpg",
+                        title: "For Men"
+                    },
+                    {
+                        img: "/gold_bracelet_for-kids.jpg",
+                        title: "For Kids"
+                    }
+                ],
+                wearingType: [
+                    {
+                        img: "/gold_bracelet_daily-wear.jpg",
+                        title: "Daily Wear"
+                    },
+                    {
+                        img: "/gold_bracelet_casual-wear.jpg",
+                        title: "Casual Wear"
+                    },
+                    {
+                        img: "/gold_bracelet_office-wear.jpg",
+                        title: "Office Wear"
+                    },{
+                        img: "/gold_bracelet_party-wear.jpg",
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        img: "/yellow-gold.jpg",
+                        title: "Yellow Gold"
+                    },
+                    {
+                        img: "/rose-gold.png",
+                        title: "Rose Gold"
+                    },
+                    {
+                        img: "/diamond_pendant_three-tone.jpg",
+                        title: "Three Tone"
+                    },
+                ]
             },
             {
                 title: "MangalSutra",
-
+                shopByStyle: [
+                    {
+                        title: "Long"
+                    },
+                    {
+                        title: "Short"
+                    },
+                    {
+                        title: "Semi Long"
+                    },
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    },
+                    {
+                        title: "Office Wear"
+                    },
+                    {
+                        title: "Casual Wear"
+                    },
+                    {
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        title: "Yellow Gold"
+                    },
+                    {
+                        title: "Two Tone"
+                    },
+                ]
             },
             {
                 title: "Collection",
-
+                shopByStyle: [
+                    {
+                        title: "Heart Alphabet"
+                    },
+                    {
+                        title: "Heart to Heart"
+                    },
+                    {
+                        title: "Zoul"
+                    },
+                    {
+                        title: "Mangalsutra Rings"
+                    },
+                    {
+                        title: "Evolve"
+                    },{
+                        title: "Envy"
+                    },
+                    {
+                        title: "Religious"
+                    },
+                    {
+                        title: "Gold Rakhi"
+                    },
+                    {
+                        title: "Tulle"
+                    },{
+                        title: "Nrityanjali"
+                    },{
+                        title: "Love Alphabet"
+                    },{
+                        title: "Gul"
+                    },{
+                        title: "Featherlight"
+                    },{
+                        title: "Tortoise Ring"
+                    },{
+                        title: "Alphabet"
+                    },{
+                        title: "Fior"
+                    },{
+                        title: "Fingerprint Ring"
+                    },{
+                        title: "Fusion"
+                    },{
+                        title: "Viraaz"
+                    },
+                ],
             },
-
         ]
     },
     {
@@ -717,30 +1090,126 @@ export const data = [
             },
             {
                 title: "Pendant",
+                shopByStyle: [
+                    {
+                        title: "Casual"
+                    },
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    },
+                    {
+                        title: "Office Wear"
+                    },
+                    {
+                        title: "Party Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        title: "Platinum"
+                    },
+                ]
             },
             {
-                title: "Nosepin",
-            },
-            {
-                title: "Necklace",
-            },
-            {
-                title: "Bangles",
-
+                title: "Chain",
+                shopByStyle: [
+                    {
+                        title: "Handcrafted"
+                    },
+                    {
+                        title: "Machine Made"
+                    },
+                    {
+                        title: "For men"
+                    },
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    },
+                    {
+                        title: "Office Wear"
+                    },
+                    {
+                        title: "Casual Wear"
+                    }
+                ],
+                shopByMetal: [
+                    {
+                        title: "Two Tone"
+                    },
+                    {
+                        title: "Platinum"
+                    }
+                ]
             },
             {
                 title: "Bracelet",
-
+                shopByStyle: [
+                    {
+                        title: "Loose"
+                    },
+                    {
+                        title: "Chain"
+                    },
+                    {
+                        title: "Tennis"
+                    },
+                    {
+                        title: "For Men"
+                    }
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    }
+                ],
+                shopByMetal: [
+                    {
+                        title: "Two Tone"
+                    },
+                    {
+                        title: "Platinum"
+                    }
+                ]
             },
             {
-                title: "MangalSutra",
-
+                title: "Necklace",
+                shopByStyle: [
+                    {
+                        title: "Close to Neck"
+                    },
+                ],
+                wearingType: [
+                    {
+                        title: "Daily Wear"
+                    },
+                ],
+                shopByMetal: [
+                    {
+                        title: "Platinum"
+                    },
+                ]
             },
             {
                 title: "Collection",
-
+                shopByStyle: [
+                    {
+                        title: "Women in Platinum"
+                    },
+                    {
+                        title: "men in Platinum"
+                    },
+                    {
+                        title: "Everyday Platinum"
+                    },
+                    {
+                        title: "Everafter Couple Bands"
+                    },
+                ],
             },
-
         ]
     }
 ];

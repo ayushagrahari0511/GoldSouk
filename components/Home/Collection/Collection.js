@@ -90,10 +90,12 @@ const Collection = () => {
                                     <h5>Shop By Style</h5>
                                     <div className={styles.list}>
                                         {
-                                            item.category[category].shopByStyle?.map((item, i) => (
+                                            item.category[category]?.shopByStyle?.map((item, i) => (
                                                 <li key={i}>
-                                                    <Image alt="img" src={item.img} width={40} height={30} />
-                                                    {item.title}
+                                                    {
+                                                        item.img &&
+                                                        <Image alt="img" src={item.img} width={40} height={30} />
+                                                    }                                                    {item.title}
                                                 </li>
                                             ))
                                         }
@@ -103,9 +105,12 @@ const Collection = () => {
                                     <h5>Wearing Type</h5>
                                     <div className={styles.list}>
                                         {
-                                            item.category[category].wearingType?.map((item, i) => (
+                                            item.category[category]?.wearingType?.map((item, i) => (
                                                 <li key={i}>
-                                                    <Image alt="img" src={item.img} width={40} height={30} />
+                                                    {
+                                                        item.img &&
+                                                        <Image alt="img" src={item.img} width={40} height={30} />
+                                                    }
                                                     {item.title}
                                                 </li>
                                             ))
@@ -116,9 +121,12 @@ const Collection = () => {
                                     <h5>Shop By Metal</h5>
                                     <div className={styles.list}>
                                         {
-                                            item.category[category].shopByMetal?.map((item, i) => (
+                                            item.category[category]?.shopByMetal?.map((item, i) => (
                                                 <li key={i} >
-                                                    <Image alt="img" src={item.img} width={40} height={30} />
+                                                    {
+                                                        item.img &&
+                                                        <Image alt="img" src={item.img} width={40} height={30} />
+                                                    }
                                                     {item.title}
                                                 </li>
                                             ))
