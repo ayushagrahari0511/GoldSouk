@@ -1,65 +1,39 @@
 import styles from './Collection.module.css'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import axios from 'axios'
 import Link from 'next/link'
 
-const collection = [
-    {
-        _id: 1,
-        title: "SOLITAIRES",
-        subCategory: [
-            {
-                _id: 1,
-                title: "RINGS",
-                img: "/solitaire_ring.webp"
-            },
-            {
-                _id: 2,
-                title: "EARRINGS",
-                img: "/solitaire_earring.webp"
-            },
-            {
-                _id: 3,
-                title: "PENDANTS",
-                img: "/solitaire_pendant.webp"
-            }
-        ]
-    },
-    {
-        _id: 2,
-        title: "DIAMOND"
-    },
-    {
-        _id: 3,
-        title: "GOLD"
-    },
-    {
-        _id: 4,
-        title: "PLATINUM"
-    },
-    {
-        _id: 5,
-        title: "GOLD COINS"
-    },
-    {
-        _id: 6,
-        title: "WATCHES"
-    },
-    {
-        _id: 7,
-        title: "GIFTS"
-    },
-    {
-        _id: 8,
-        title: "GIFTS CARDS"
-    },
-    {
-        _id: 9,
-        title: "GOLD RATE"
-    },
-]
 const Collection = () => {
     const [isSSR, setIsSSR] = useState(false)
+    const [rate, setRate] = useState({
+        goldRate: 0,
+        silverRate: 0,
+    })
+
+    useEffect(() => {
+        const controller = new AbortController();
+        async function fetch() {
+            try {
+                const { data } = await axios.get(`http://backend.bizinnovisiondev.co:5000/api/goldRate`, { signal: controller.signal })
+                setRate({
+                    goldRate: data.rate.goldRate,
+                    silverRate: data.rate.silverRate
+                })
+
+                console.log(data)
+
+            }
+            catch (err) {
+                console.log(err.message)
+            }
+        }
+        fetch()
+        return () => {
+            controller.abort();
+        }
+    }, [])
+
 
     useEffect(() => {
         setIsSSR(true)
@@ -482,18 +456,228 @@ const Collection = () => {
                 </li>
                 <li>
                     GOLD COINS
+                    <div className={`${styles.row} ${styles.dropdown}`}>
+                        <div className={styles.sub_category}>
+                            <li>
+                                <Link href="#">
+                                    Shop By Type
+                                </Link>
+                            </li>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>999.9</h5>
+                            <div className={styles.list}>
+                                <li>
+                                    5g
+                                </li>
+                                <li>
+                                    10g
+                                </li>
+                                <li>
+                                    20g
+                                </li>
+                                <li>
+                                    50g
+                                </li>
+                                <li>
+                                    100g
+                                </li>
+                            </div>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>999</h5>
+                            <div className={styles.list}>
+                                <li>
+                                    1g
+                                </li>
+                                <li>
+                                    2g
+                                </li>
+                                <li>
+                                    3g
+                                </li>
+                                <li>
+                                    3.5g
+                                </li>
+                                <li>
+                                    5g
+                                </li>
+                                <li>
+                                    8g
+                                </li>
+                                <li>
+                                    10g
+                                </li>
+                                <li>
+                                    20g
+                                </li>
+                                <li>
+                                    50g
+                                </li>
+                            </div>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>916</h5>
+                            <div className={styles.list}>
+                                <li>
+                                    1g
+                                </li>
+                                <li>
+                                    2g
+                                </li>
+                                <li>
+                                    5g
+                                </li>
+                                <li>
+                                    8g
+                                </li>
+                                <li>
+                                    10g
+                                </li>
+                                <li>
+                                    20g
+                                </li>
+                                <li>
+                                    50g
+                                </li>
+                            </div>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>Designer Coin</h5>
+                            <div className={styles.list}>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     WATCHES
+                    <div className={`${styles.row} ${styles.dropdown}`}>
+                        <div className={styles.sub_category}>
+                            <li>
+                                <Link href="#">
+                                    Shop By Brand
+                                </Link>
+                            </li>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>Brands</h5>
+                            <div className={styles.list}>
+                                <li>
+                                    TAG Heuer
+                                </li>
+                                <li>
+                                    Rado
+                                </li>
+                                <li>
+                                    Calvin Klein
+                                </li>
+                                <li>
+                                    Seiko
+                                </li>
+                                <li>
+                                    Fossil
+                                </li>
+                                <li>
+                                    Alba
+                                </li>
+                                <li>
+                                    Longines
+                                </li>
+                                <li>
+                                    Tissot
+                                </li>
+                                <li>
+                                    MK
+                                </li>
+                                <li>
+                                    Garmin
+                                </li>
+                                <li>
+                                    Skagen
+                                </li>
+                                <li>
+                                    GUESS
+                                </li>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     GIFTS
+                    <div className={`${styles.row} ${styles.dropdown}`}>
+                        <div className={styles.sub_category}>
+                            <li>
+                                <Link href="#">
+                                    Occasion
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Recommendations
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Collection
+                                </Link>
+                            </li>
+                        </div>
+                        <div className={styles.shop_style}>
+                            <h5>Shop By Ocassion</h5>
+                            <div className={styles.list}>
+                                <li>
+                                    Birthday
+                                </li>
+                                <li>
+                                    Wedding
+                                </li>
+                                <li>
+                                    Mothers Day
+                                </li>
+                                <li>
+                                    Valentine
+                                </li>
+                                <li>
+                                    Rakshabandhan
+                                </li>
+                                <li>
+                                    Engagement
+                                </li>
+                                <li>
+                                    Womens Day
+                                </li>
+                                <li>
+                                    Baby Birth
+                                </li>
+                                <li>
+                                    Festive Gift
+                                </li>
+                                <li>
+                                    Anniversary
+                                </li>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     GIFT CARDS
                 </li>
-                <li>
+                <li className={styles.gold_wrapper}>
                     GOLD RATE
+                    <div className={styles.gold_rate}>
+                        <h5>Today's Gold Rate</h5>
+                        <div className={styles.rate}>
+                            <h6>24 KT-</h6>
+                            <p>USD. {parseFloat(rate.goldRate * 24 / 24).toFixed(2)}/g</p>
+                        </div>
+                        <div className={styles.rate}>
+                            <h6>22 KT-</h6>
+                            <p>USD. {parseFloat(rate.goldRate * 22 / 24).toFixed(2)}/g</p>
+                        </div>
+                        <h6>
+                            Updated on: {new Date().toLocaleDateString()} {new Date().toLocaleTimeString()}
+                        </h6>
+                    </div>
                 </li>
             </div>
         </div>

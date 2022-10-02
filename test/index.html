@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Prototype.</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
+    <script src="https://cdn.mirrar.in/v4.0.5/js/init.min.js"></script>
+    <script>
+        (function ($) {
+            "use strict";
+            $(document).ready(function () {
+                var options = {
+                    // "key": "API_KEY_HERE",
+                    "key": "3qOOr68TIBUZfRwRjBRjPl7skmH7JIVSzWofU3uR",
+                }
+
+                const action = "add"
+                const tryonPayload = {
+                    _id: 1334,
+                    product_category: "EAR",
+                    product_name: "earring",
+                    product_id: 568,
+                    thumbnail: "./two-tone.jpg"
+                }
+
+                init(options);
+                start();
+                // filterAddRemove()
+                // startCamera();
+                // filterAddRemove(action, tryonPayload);
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
