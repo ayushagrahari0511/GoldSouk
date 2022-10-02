@@ -3,13 +3,18 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import axios from 'axios'
 import Link from 'next/link'
+import { data } from './data'
 
 const Collection = () => {
     const [isSSR, setIsSSR] = useState(false)
+    const [collection, setCollection] = useState(0);
+    const [category, setCategory] = useState(0);
     const [rate, setRate] = useState({
         goldRate: 0,
         silverRate: 0,
     })
+
+    console.log(collection)
 
     useEffect(() => {
         const controller = new AbortController();
@@ -42,7 +47,7 @@ const Collection = () => {
         isSSR &&
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <li>
+                <li onMouseEnter={() => setCollection("SOLITAIRES")}>
                     SOLITAIRES
                     <div className={styles.dropdown}>
                         <div className={styles.category}>
@@ -69,392 +74,62 @@ const Collection = () => {
                         </div>
                     </div>
                 </li>
-                <li>
-                    DIAMOND
-                    <div className={`${styles.row} ${styles.dropdown}`}>
-                        <div className={styles.sub_category}>
-                            <li>
-                                <Link href="#">
-                                    Ring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Earring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Pendant
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Nosepin
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Necklace
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bangle
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bracelet
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    MangalSutra
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Collection
-                                </Link>
-                            </li>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Style</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/band.jpg" width={40} height={40} />
-                                    Bands
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/muilty-finger.jpg" width={40} height={40} />
-                                    Multi Finger
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/solitaire.jpg" width={40} height={40} />
-                                    Solitaire
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/broad.jpg" width={40} height={40} />
-                                    Broad Rings
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/for-men.jpg" width={40} height={40} />
-                                    For men
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/casual_2.jpg" width={40} height={40} />
-                                    Casual
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/stackable.jpg" width={40} height={40} />
-                                    Stackable
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/cocktail.jpg" width={40} height={40} />
-                                    Cocktail
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/eternity.jpg" width={40} height={40} />
-                                    Eternity
-                                </li>
+                {
+                    data.map((item, i) => (
+                        <li key={i} onMouseEnter={() => setCollection(i)} onMouseLeave={() => setCategory(0)}>
+                            {item.title}
+                            <div className={`${styles.row} ${styles.dropdown}`}>
+                                <div className={styles.sub_category}>
+                                    {
+                                        item.category.map((cat, i) => (
+                                            <li onMouseEnter={() => setCategory(i)} key={i} >{cat.title}</li>
+                                        ))
+                                    }
+                                </div>
+                                <div className={styles.shop_style}>
+                                    <h5>Shop By Style</h5>
+                                    <div className={styles.list}>
+                                        {
+                                            item.category[category].shopByStyle?.map((item, i) => (
+                                                <li key={i}>
+                                                    <Image alt="img" src={item.img} width={40} height={30} />
+                                                    {item.title}
+                                                </li>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                                <div className={styles.shop_style}>
+                                    <h5>Wearing Type</h5>
+                                    <div className={styles.list}>
+                                        {
+                                            item.category[category].wearingType?.map((item, i) => (
+                                                <li key={i}>
+                                                    <Image alt="img" src={item.img} width={40} height={30} />
+                                                    {item.title}
+                                                </li>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                                <div className={styles.shop_style}>
+                                    <h5>Shop By Metal</h5>
+                                    <div className={styles.list}>
+                                        {
+                                            item.category[category].shopByMetal?.map((item, i) => (
+                                                <li key={i} >
+                                                    <Image alt="img" src={item.img} width={40} height={30} />
+                                                    {item.title}
+                                                </li>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Wearing Type</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/Daily-Wear-icon.jpg" width={40} height={40} />
-                                    Daily Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/office-wear_7.jpg" width={40} height={40} />
-                                    Office Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/casual-wear_3.jpg" width={40} height={40} />
-                                    Casual Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/party-wear_6.jpg" width={40} height={40} />
-                                    Party Wear
-                                </li>
-                            </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Metal</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/yellow-gold.jpg" width={40} height={40} />
-                                    Yellow Gold
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/white-gold.png" width={40} height={40} />
-                                    White Gold
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/rose-gold.png" width={40} height={40} />
-                                    Rose Gold
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/two-tone.jpg" width={40} height={40} />
-                                    Two Tone
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    GOLD
-                    <div className={`${styles.row} ${styles.dropdown}`}>
-                        <div className={styles.sub_category}>
-                            <li>
-                                <Link href="#">
-                                    Ring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Earring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Pendant
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Nosepin
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Necklace
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bangles
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bracelet
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    MangalSutra
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Collection
-                                </Link>
-                            </li>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Style</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/gold_gold_band.jpg" width={40} height={30} />
-                                    Bands
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_stacable.jpg" width={40} height={30} />
-                                    Stackable
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_cocktail.jpg" width={40} height={30} />
-                                    Cocktail
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_gold_broad.jpg" width={40} height={30} />
-                                    Broad Rings
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_for-men.jpg" width={40} height={30} />
-                                    For men
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_casual.jpg" width={40} height={30} />
-                                    Casual
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_solitaire.jpg" width={40} height={30} />
-                                    Single Stone
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_cocktail.jpg" width={40} height={30} />
-                                    Two Headed
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_eternity.jpg" width={40} height={30} />
-                                    Eternity
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_for-kids.jpg" width={40} height={30} />
-                                    For Kids
-                                </li>
-                            </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Wearing Type</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/gold_daily-wear.jpg" width={40} height={30} />
-                                    Daily Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_office-wear.jpg" width={40} height={30} />
-                                    Office Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_casual-wear.jpg" width={40} height={30} />
-                                    Casual Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_party-wear.jpg" width={40} height={30} />
-                                    Party Wear
-                                </li>
-                            </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Metal</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/gold_yellow-gold.jpg" width={40} height={30} />
-                                    Yellow Gold
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_rose-gold.png" width={40} height={30} />
-                                    Rose Gold
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_two-tone.jpg" width={40} height={30} />
-                                    Two Tone
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/gold_two-tone2.jpg" width={40} height={30} />
-                                    Three Tone
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    PLATINUM
-                    <div className={`${styles.row} ${styles.dropdown}`}>
-                        <div className={styles.sub_category}>
-                            <li>
-                                <Link href="#">
-                                    Ring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Earring
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Pendant
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Nosepin
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Necklace
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bangle
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Bracelet
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    MangalSutra
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#">
-                                    Collection
-                                </Link>
-                            </li>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Style</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/platinum_band.jpg" width={40} height={30} />
-                                    Bands
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_casual.jpg" width={40} height={30} />
-                                    Casual
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_solitaire.jpg" width={40} height={30} />
-                                    Solitaire
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_two-headed.jpg" width={40} height={30} />
-                                    Two Headed
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_eternity.jpg" width={40} height={30} />
-                                    Eternity
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_for-men.jpg" width={40} height={30} />
-                                    For men
-                                </li>
-                            </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Ocassion</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/platinum_daily-wear.jpg" width={40} height={30} />
-                                    Daily Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_office-wear.jpg" width={40} height={30} />
-                                    Office Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_casual2.jpg" width={40} height={30} />
-                                    Casual Wear
-                                </li>
-                                <li>
-                                    <Image alt="img" src="/platinum_party-wear.jpg" width={40} height={30} />
-                                    Party Wear
-                                </li>
-                            </div>
-                        </div>
-                        <div className={styles.shop_style}>
-                            <h5>Shop By Metal</h5>
-                            <div className={styles.list}>
-                                <li>
-                                    <Image alt="img" src="/platinum_platinum.jpg" width={40} height={30} />
-                                    Platinum
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
+                        </li>
+                    ))
+                }
+                <li onMouseEnter={() => setCollection("GOLDCOINS")}>
                     GOLD COINS
                     <div className={`${styles.row} ${styles.dropdown}`}>
                         <div className={styles.sub_category}>
@@ -549,7 +224,7 @@ const Collection = () => {
                         </div>
                     </div>
                 </li>
-                <li>
+                <li onMouseEnter={() => setCollection("WATCHES")}>
                     WATCHES
                     <div className={`${styles.row} ${styles.dropdown}`}>
                         <div className={styles.sub_category}>
@@ -602,7 +277,7 @@ const Collection = () => {
                         </div>
                     </div>
                 </li>
-                <li>
+                <li onMouseEnter={() => setCollection("GIFTS")}>
                     GIFTS
                     <div className={`${styles.row} ${styles.dropdown}`}>
                         <div className={styles.sub_category}>

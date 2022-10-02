@@ -6,40 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Prototype.</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
-    <link rel="stylesheet" href="./index.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #MirrAR-panel {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            position: absolute;
+            z-index: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-    </div>
-    <script src="https://cdn.mirrar.in/v4.0.5/js/init.min.js"></script>
-    <script>
-        (function ($) {
-            "use strict";
-            $(document).ready(function () {
-                var options = {
-                    // "key": "API_KEY_HERE",
-                    "key": "3qOOr68TIBUZfRwRjBRjPl7skmH7JIVSzWofU3uR",
-                }
-
-                const action = "add"
-                const tryonPayload = {
-                    _id: 1334,
-                    product_category: "EAR",
-                    product_name: "earring",
-                    product_id: 568,
-                    thumbnail: "./two-tone.jpg"
-                }
-
-                init(options);
-                start();
-                // filterAddRemove()
-                // startCamera();
-                // filterAddRemove(action, tryonPayload);
-            });
-        })(jQuery);
-    </script>
+    <div class="VTO" id="VTO" style="height: 100%; width: 100%;"></div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.mirrar.in/v4.0.5/js/init.min.js"></script>
+<script>
+    var options = {
+        // "key": "API_KEY_HERE",
+        "key": "3qOOr68TIBUZfRwRjBRjPl7skmH7JIVSzWofU3uR",
+    }
+
+    const action = "add"
+    const tryonPayload = {
+        _id: 1334,
+        product_category: "EAR",
+        product_name: "earring",
+        product_id: 568,
+        thumbnail: "./two-tone.jpg"
+    }
+    $(document).ready(async function () {
+
+        init(options);
+        start();
+    });
+    // filterAddRemove()
+    // startCamera();
+    // filterAddRemove(action, tryonPayload);
+
+    document.addEventListener('init', (data) => {
+        filterAddRemove("add", tryon_payload);
+    });
+</script>
+
 </html>
