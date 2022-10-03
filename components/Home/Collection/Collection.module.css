@@ -62,8 +62,8 @@
     cursor: pointer;
     flex-direction: column;
     padding: 1rem;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .category > h3 {
@@ -72,13 +72,42 @@
     text-align: center;
     font-weight: 500;
     color: var(--grey);
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .vertical {
     height: 30rem;
     width: .1rem;
-    background: var(--grey);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.diamond_list {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    grid-gap: .5rem;
+}
+
+.diamond_list > div {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loose_diamond {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+}
+
+.loose_diamond:hover {
+    filter: invert(10%) sepia(28%) saturate(1900%) hue-rotate(230deg) brightness(70%) contrast(89%);
+    transition: all 0.3s ease;
 }
 
 .cat_img {

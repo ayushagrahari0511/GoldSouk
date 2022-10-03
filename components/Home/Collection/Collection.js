@@ -72,6 +72,59 @@ const Collection = () => {
                                 <Image alt="img" src="/solitaire_pendant.webp" layout="fill" />
                             </div>
                         </div>
+                        <div className={styles.vertical}></div>
+                        <div className={styles.category}>
+                            <h3>BUY LOOSE DIAMOND</h3>
+                            <div className={styles.diamond_list}>
+                                <div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/round.svg" layout="fill"></Image>
+                                    </div>
+                                    ROUND
+                                </div>
+                                <div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/cushion.svg" layout="fill"></Image>
+                                    </div>
+                                    CUSHION
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/princess.svg" layout="fill"></Image>
+                                    </div>
+                                    PRINCESS
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/oval.svg" layout="fill"></Image>
+                                    </div>
+                                    OVAL
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/heart.svg" layout="fill"></Image>
+                                    </div>
+                                    HEART
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/radian.svg" layout="fill"></Image>
+                                    </div>
+                                    RADIANT
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/emerald.svg" layout="fill"></Image>
+                                    </div>
+                                    EMERALD
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/marquise.svg" layout="fill"></Image>
+                                    </div>
+                                    MARQUISE
+                                </div><div>
+                                    <div className={styles.loose_diamond}>
+                                        <Image src="/pear.svg" layout="fill"></Image>
+                                    </div>
+                                    PEAR
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 {
