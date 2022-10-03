@@ -7,6 +7,8 @@ import Footer from '../components/Home/Footer/Footer'
 import Trending from '../components/Home/Trending/Trending'
 import Watch from '../components/Watch/Watch'
 import Categories from '../components/Home/Categories/Categories'
+import { motion } from 'framer-motion'
+import { fadeInUp, fadeInDown } from '../vaiants'
 
 export default function Home() {
   return (
@@ -18,8 +20,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Contact />
-        <Landing />
+        <motion.nav
+          variants={fadeInDown}
+          initial="initial"
+          animate="animate"
+        >
+          <Contact />
+          <Landing />
+        </motion.nav>
         <Trending />
         <Categories />
         <div className={styles.background_ring}>
