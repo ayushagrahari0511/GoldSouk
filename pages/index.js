@@ -31,7 +31,7 @@ export default function Home() {
         <Trending />
         <Categories />
         <div className={styles.background_ring}>
-          <Image src="/diamond_ring.png" layout='fill' />
+          <Image src="/ring.jpeg" layout='fill' />
         </div>
         <Watch />
       </main>
