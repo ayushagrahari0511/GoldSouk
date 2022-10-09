@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '../Navbar/Navbar'
 import Collection from '../Collection/Collection'
+// import Collection from '../../Collection'
 import { motion } from 'framer-motion'
 import { fadeInUp, fadeInRight, fadeInLeft } from '../../../vaiants'
 
 const Landing = () => {
     return (
         <main className={styles.wrapper}>
-            <Collection />
+            {/* <Collection /> */}
             {/* <Navbar /> */}
             <div className={styles.container}>
                 <aside className={styles.left_side}>

@@ -8,6 +8,7 @@ import Trending from '../components/Home/Trending/Trending'
 import Watch from '../components/Watch/Watch'
 import Categories from '../components/Home/Categories/Categories'
 import { motion } from 'framer-motion'
+import Collection from '../components/Collection'
 import { fadeInUp, fadeInDown } from '../vaiants'
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
           animate="animate"
         >
           <Contact />
+          <Collection />
           <Landing />
         </motion.nav>
         <Trending />

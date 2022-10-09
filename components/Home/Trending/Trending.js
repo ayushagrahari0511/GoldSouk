@@ -1,10 +1,15 @@
 import styles from './Trending.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 
 const Trending = () => {
     return (
-        <div className={styles.wrapper}>
+        <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        viewport={{once: true}}
+         className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.header_wrapper}>
                     <div className={styles.logo}>
@@ -50,7 +55,7 @@ const Trending = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

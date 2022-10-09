@@ -7,8 +7,8 @@ import { data } from './data'
 
 const Collection = () => {
     const [isSSR, setIsSSR] = useState(false)
-    const [collection, setCollection] = useState(0);
     const [category, setCategory] = useState(0);
+    const [collection, setCollection] = useState(0);
     const [rate, setRate] = useState({
         goldRate: 0,
         silverRate: 0,
